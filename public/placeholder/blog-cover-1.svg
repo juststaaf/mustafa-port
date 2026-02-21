@@ -1,0 +1,12 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="120" y1="70" x2="1500" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00e5ff"/>
+      <stop offset="1" stop-color="#ff4d8d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="40" fill="#10131b"/>
+  <rect x="28" y="28" width="1544" height="844" rx="28" fill="url(#g)" fill-opacity="0.34"/>
+  <path d="M170 660L430 300L680 600L950 360L1220 620L1420 410" stroke="#f4f7ff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="130" y="170" fill="#f4f7ff" font-family="Arial, sans-serif" font-size="66" font-weight="700">Blog Cover 01</text>
+</svg>

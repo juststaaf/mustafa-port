@@ -1,0 +1,14 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="136" y1="120" x2="1040" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff9f1c"/>
+      <stop offset="1" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="42" fill="#121620"/>
+  <rect x="36" y="36" width="1128" height="828" rx="30" fill="url(#g)" fill-opacity="0.3"/>
+  <circle cx="355" cy="440" r="140" stroke="#f4f7ff" stroke-width="28"/>
+  <circle cx="612" cy="440" r="140" stroke="#f4f7ff" stroke-width="28"/>
+  <circle cx="868" cy="440" r="140" stroke="#f4f7ff" stroke-width="28"/>
+  <text x="600" y="790" text-anchor="middle" fill="#f4f7ff" font-family="Arial, sans-serif" font-size="52" font-weight="700">Work Placeholder 02</text>
+</svg>

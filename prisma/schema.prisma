@@ -1,0 +1,117 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model AdminCredential {
+  id           Int      @id
+  passwordHash String
+  updatedAt    DateTime @updatedAt
+}
+
+model SiteSettings {
+  id                 Int      @id
+  siteNameEn         String
+  siteNameAr         String
+  ownerNameEn        String
+  ownerNameAr        String
+  roleEn             String
+  roleAr             String
+  heroTitleEn        String
+  heroTitleAr        String
+  heroSubtitleEn     String
+  heroSubtitleAr     String
+  aboutTitleEn       String
+  aboutTitleAr       String
+  aboutBodyEn        String   @db.Text
+  aboutBodyAr        String   @db.Text
+  contactTitleEn     String
+  contactTitleAr     String
+  contactBodyEn      String
+  contactBodyAr      String
+  ctaTitleEn         String
+  ctaTitleAr         String
+  ctaBodyEn          String
+  ctaBodyAr          String
+  backgroundGlow1    String   @default("#ff601d") @db.VarChar(7)
+  backgroundGlow2    String   @default("#00e5ff") @db.VarChar(7)
+  backgroundGlow3    String   @default("#ff4d8d") @db.VarChar(7)
+  backgroundBase1    String   @default("#050608") @db.VarChar(7)
+  backgroundBase2    String   @default("#10131b") @db.VarChar(7)
+  backgroundBase3    String   @default("#07080c") @db.VarChar(7)
+  resultsCampaigns   Int      @default(120)
+  resultsClients     Int      @default(31)
+  resultsActive      Int      @default(7)
+  resultsExperience  Int      @default(7)
+  email              String
+  phone              String
+  whatsapp           String
+  instagram          String
+  linkedin           String
+  letsWorkContentEn  String?  @db.Text
+  letsWorkContentAr  String?  @db.Text
+  portraitPath       String?
+  introAudioPath     String?
+  updatedAt          DateTime @updatedAt
+}
+
+model Service {
+  id            Int      @id @default(autoincrement())
+  titleEn       String
+  titleAr       String
+  descriptionEn String
+  descriptionAr String
+  displayOrder  Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Work {
+  id           Int      @id @default(autoincrement())
+  name         String
+  logoPath     String?
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Collaboration {
+  id           Int      @id @default(autoincrement())
+  name         String
+  logoPath     String?
+  accentColor  String?  @db.VarChar(7)
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Certificate {
+  id           Int      @id @default(autoincrement())
+  title        String
+  issuer       String
+  issuedAt     DateTime
+  description  String?  @db.Text
+  imagePath    String?
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model BlogPost {
+  id            Int      @id @default(autoincrement())
+  slug          String   @unique
+  titleEn       String
+  titleAr       String
+  excerptEn     String
+  excerptAr     String
+  contentHtmlEn String   @db.Text
+  contentHtmlAr String   @db.Text
+  coverImage    String?
+  publishedAt   DateTime
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

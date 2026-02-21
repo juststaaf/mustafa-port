@@ -1,0 +1,14 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="120" y1="80" x2="1500" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff9f1c"/>
+      <stop offset="1" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="40" fill="#10131b"/>
+  <rect x="28" y="28" width="1544" height="844" rx="28" fill="url(#g)" fill-opacity="0.34"/>
+  <circle cx="430" cy="460" r="180" stroke="#f4f7ff" stroke-width="26"/>
+  <circle cx="800" cy="460" r="180" stroke="#f4f7ff" stroke-width="26"/>
+  <circle cx="1170" cy="460" r="180" stroke="#f4f7ff" stroke-width="26"/>
+  <text x="130" y="170" fill="#f4f7ff" font-family="Arial, sans-serif" font-size="66" font-weight="700">Blog Cover 02</text>
+</svg>

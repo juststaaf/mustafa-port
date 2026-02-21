@@ -1,0 +1,14 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="120" y1="80" x2="1450" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00e5ff"/>
+      <stop offset="0.52" stop-color="#ff4d8d"/>
+      <stop offset="1" stop-color="#ff9f1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="40" fill="#11131b"/>
+  <rect x="34" y="34" width="1532" height="932" rx="26" fill="url(#g)" fill-opacity="0.24" stroke="#f4f7ff" stroke-opacity="0.28" stroke-width="4"/>
+  <rect x="168" y="224" width="1264" height="550" rx="22" fill="#0b0e15" fill-opacity="0.7" stroke="#f4f7ff" stroke-opacity="0.2" stroke-width="3"/>
+  <text x="800" y="430" text-anchor="middle" fill="#f4f7ff" font-family="Arial, sans-serif" font-size="96" font-weight="700">CERTIFICATE</text>
+  <text x="800" y="545" text-anchor="middle" fill="#dbe7ff" font-family="Arial, sans-serif" font-size="48">Temporary Preview Asset</text>
+</svg>
